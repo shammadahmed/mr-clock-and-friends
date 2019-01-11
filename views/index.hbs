@@ -1,0 +1,18 @@
+<h1>Demiurges</h1>
+
+{{#each demiurges as |demiurge|}}
+	<div class="demiurge">
+		<div class="demiurge-name">
+			<a href="/demiurges/{{demiurge.name}}">
+				{{demiurge.name}}
+			</a>
+		</div>
+		<div class="demiurge-domains">
+			{{#each demiurge.domains as |domain|}}
+				<div class="demiurge-domain">
+					{{domain}}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+{{/each}}
